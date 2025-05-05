@@ -1,0 +1,25 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  # --- NPM dependencies ---
+  - package-ecosystem: "npm"
+    directory: "/"  # location of package.json
+    schedule:
+      interval: "weekly"  # reduce noise, but can be "daily" too
+    allow:
+      - dependency-type: "direct"
+    ignore:
+      - dependency-name: "*"  # ignore all non-security updates
+        update-types: ["version-update:semver-patch", "version-update:semver-minor"]
+    security-updates-only: true
+    commit-message:
+      prefix: "deps"
+
+  # --- Docker dependencies ---
+  - package-ecosystem: "docker"
+    directory: "/"  # location of Dockerfile
+    schedule:
+      interval: "weekly"
+    security-updates-only: true
+    commit-message:
+      prefix: "docker-deps"
