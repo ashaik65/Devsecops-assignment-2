@@ -1,23 +1,22 @@
 # .github/dependabot.yml
 version: 2
 updates:
-  # --- NPM dependencies ---
-  - package-ecosystem: "npm"
-    directory: "/"  # location of package.json
+  # --- Python dependencies ---
+  - package-ecosystem: "pip"
+    directory: "/"  # where requirements.txt is located
     schedule:
       interval: "weekly"
     allow:
       - dependency-type: "direct"
-    ignore:
-      - dependency-name: "*"  # ignore all non-security updates
-        update-types: ["version-update:semver-patch", "version-update:semver-minor"]
     commit-message:
       prefix: "deps"
+    open-pull-requests-limit: 5
 
   # --- Docker dependencies ---
   - package-ecosystem: "docker"
-    directory: "/"  # location of Dockerfile
+    directory: "/"  # where your Dockerfile is located
     schedule:
       interval: "weekly"
     commit-message:
       prefix: "docker-deps"
+    open-pull-requests-limit: 5
