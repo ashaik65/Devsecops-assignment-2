@@ -24,8 +24,8 @@ This POC demonstrates integrating GHAS into a vulnerable sample Python project (
 - Pushed intentionally vulnerable Python app (`damn-vulnerable-MCP-server`).
 - Added `.github/workflows/codeql.yml` for automatic code scanning.
 - Added `.github/dependabot.yml` to scan:
-  - Python packages via `pip` (weekly)
-  - Docker base image (weekly)
+  - Python packages via `pip` (daily)
+  - Docker base image (daily)
 
 ### 🪪 Secret Detection Tested:
 - Pushed an AWS Access Key ID + Secret Key in a test commit.
@@ -33,9 +33,12 @@ This POC demonstrates integrating GHAS into a vulnerable sample Python project (
 
 ### 📷 Screenshots Attached:
 1. **Dependabot alerts showing CVEs**
-2. **CodeQL scan results listing code-level vulnerabilities**
-3. **Secret scanning warning on AWS key**
-4. **Security dashboard with all enabled features**
+
+![Dependabot-alert](https://github.com/user-attachments/assets/4f915f60-b14c-4af4-8588-5b613d6142d3)
+
+3. **CodeQL scan results listing code-level vulnerabilities**
+4. **Secret scanning warning on AWS key**
+5. **Security dashboard with all enabled features**
 
 ---
 
