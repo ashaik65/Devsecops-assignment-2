@@ -37,14 +37,17 @@ This POC demonstrates integrating GHAS into a vulnerable sample Python project (
 ![Dependabot-alert](https://github.com/user-attachments/assets/4f915f60-b14c-4af4-8588-5b613d6142d3)
 
 2. **CodeQL scan results listing code-level vulnerabilities**
+   
 ![codeql scan cve](https://github.com/user-attachments/assets/a02cc246-267f-4bac-afba-a6595e6f3053)
 
 3. **Secret scanning warning on AWS key**
+   
 ![AWS access key push](https://github.com/user-attachments/assets/3aa6dbc3-7dc2-4cce-a2e4-c9e4c8153660)
 
 ![Push commit](https://github.com/user-attachments/assets/ed9737c6-d06d-4d52-8052-35488ca36f1e)
   
 4. **Security dashboard with all enabled features**
+
 ![Security Enabled](https://github.com/user-attachments/assets/ac05105c-e536-4df6-92ea-76e01f9496cd)
 
 ---
